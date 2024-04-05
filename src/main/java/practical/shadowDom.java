@@ -1,10 +1,12 @@
 package practical;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class shadowDom {
 	
@@ -21,6 +23,12 @@ public static void main(String[] args) {
 	
 	WebElement wb = shadowRoot.findElement(By.cssSelector("input[type='text']"));
 	wb.sendKeys("hari");
+	
+//	/		intacting with closed shadowroot
+	
+	Actions act = new Actions(driver);
+	
+	act.keyDown(Keys.TAB).sendKeys("hari").perform();
 	
 	
 	
