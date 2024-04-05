@@ -31,13 +31,10 @@ public static void main(String[] args) {
 	act.keyDown(Keys.TAB).sendKeys("hari").perform();
 	
 	
-<<<<<<< HEAD
-	
-//	hari
-=======
+
 //	?hello i am from manger commit
 	
->>>>>>> 14d68700fa264c5b74867f856a6fb9efbb7d34aa
+
 	
 	
 	
